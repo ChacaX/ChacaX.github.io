@@ -34,49 +34,56 @@ padding: 20px;
 text-decoration: none;
 text-align: center;
 font-size: 50px;
-font-family: arial;
-background-color: #d8e0fd;
-width: 600px;
-opacity: 90%;
+font-family: nevis;
+background-color: magenta;
+width: 500px;
+opacity: 100%;
 color: white;
 display: block;
-border-radius: 15px;
-box-shadow: 0 10px 0 black;
+border-radius: 10px;
+box-shadow: 0 7px 0 black;
+} 
+
+.arial {
+font-family: arial;
 } 
 
 .anim {
-width: 300px;
-heigth: 600px;
-background-color: #444;
-animation: animasinya 1s ease 1 reverse forwards running;
+width: 100%;
+animation: animasinya 7s ease 100 reverse forwards running;
 } 
 								
 @keyframes animasinya {
 0% {
-background-color: cyan;
+text-align: right;
+opacity: 100%;
 }
 25% {
-background-color: green;
+text-align: center;
+opacity: 0%;
 } 
 50% {
-background-color: lightblue;
-}
-75% {
-background-color: yellow;
+text-align: center;
+opacity: 100%;
 } 
-100% {
-background-color: brown;
+75% {
+text-align: right;
+opacity: 0%;
 }
+100% {
+text-align: right;
+opacity: 100%;
+} 
 }
 
 .motivasi {
 opacity: 100%;
-animation: motiv 3s ease 100 reverse forwards running;
+animation: motiv 7s ease 100 reverse forwards running;
 } 
 								
 @keyframes motiv {
 0% {
-opacity: 50%;
+opacity: 0;
 }
 25% {
 opacity: 25%;
@@ -88,7 +95,7 @@ opacity: 50%;
 opacity: 75%;
 }
 100% {
-opacity: 100%;
+opacity: 25%;
 }
 }
 								
@@ -99,17 +106,51 @@ opacity: 100%;
 <div class="container">
 <div class="kolom">
 <div class="header">
-<center>______________________________</center>
+<center><h1>mitsuha official</h1></center>
+<br>
+<center>____________________</center>
 <br>
 <center><h4><div class="motivasi">I am caca, I am the creator of this Website. If you want to provide suggestions or comments, please contact the number listed below. Spam is not allowed, Sis, understand that my website is not interesting because I'm just learning CSS</div></h4></center>
 <br>
-<center>______________________________</center>
-<br>
-<center><a style="text-decoration:none" href="/profile/"><div class="type">INFO PROFILE</div></a></center>
+<center>____________________</center>
 <br>
 </div>
 </div>
 </div>
 
+<br><br>
+<center><div class="container">
+<div class="kolom">
+<div class="header">
+<center><image src="https://f.top4top.io/p_219133l471.png"></image></center>
+<center><h1>profile</h1></center>
+<br>
+<center><a style="text-decoration:none" href="/profile/"><div class="type">VIEW MORE <span>&rarr;</span></div></a></center>
+<br>
+</center>
+</div>
+</div>
+
+<br><br>
+<div class="container">
+<div class="kolom">
+<div class="header">
+<center><image src="https://g.top4top.io/p_2191w5fqv0.png"></image></center>
+<center><h1>galery</h1></center>
+<br>
+<center><div class="galeri">
+<image src="https://i.top4top.io/p_2191d30rj0.png"></image>
+<image src="https://j.top4top.io/p_2191vxvu11.png"></image>
+<image src="https://k.top4top.io/p_2191388yi1.png"></image></center>
+</div>
+<br>
+<center><a style="text-decoration:none" href="/galeri/"><div class="type">VIEW MORE <span>&rarr;</span></div></a></center>
+<br>
+</div>
+</div>
+</div>
+
+<br><br>
+	
 </body>
 </html>
