@@ -13,16 +13,11 @@ UKURAN IMAGE PROFILE = 120px × 120px
 @media (min-width: 768px) {
 	
 .template {
-background-color: white;
+background-color: #eee;
 width: 1000px;
 margin: auto;
 }
 	
-.bg {
-background-color: #eee;
-width: 1000px;
-}
-
 .container {
 background-color: white;
 width: 1000px;
@@ -59,13 +54,7 @@ text-align: center;
 margin: auto;
 font-size: 20px;
 box-shadow: 0px 0px 3px black;
-font-family: sans-serif;
 }
-}
-
-.bg {
-background-color: #eee;
-width: 1000px;
 }
 
 .container {
@@ -102,6 +91,15 @@ text-align: center;
 margin: auto;
 font-size: 20px;
 box-shadow: 0px 0px 3px black;
+}
+
+.template {
+background-color: #eee;
+width: 1000px;
+margin: auto;
+}
+
+.animasiImg {
 font-family: sans-serif;
 }
 
@@ -109,12 +107,29 @@ font-family: sans-serif;
 font-family: sans-serif;
 }
 
+.animasiImg:hover {
+animation: animasiImg 2s ease 1 normal;
+}
+
+@keyframes animasiImg {
+0% {
+padding: 10px;
+}
+50% {
+padding: 70px;
+transform: scale(1.1);
+}
+100% {
+padding: 10px;
+}
+}
+
 .animasi:hover {
 animation: animasi 2s ease 1 normal;
 }
 
 @keyframes animasi {
-	0% {
+0% {
 padding: 10px;
 }
 50% {
@@ -149,7 +164,6 @@ padding: 10px;
 </div>
 <br>
 </div>
-<div class="bg">
 <br>
 <!--- KONTEN WEBSITE --->
 <!----------->
@@ -190,7 +204,7 @@ padding: 10px;
 <h1 style="color: lightgray; padding: 20px; ">Public 27 february 2022</h1>
 <div class="katalog">
 <br>
-<center><div class="animasi"><img src="https://i.top4top.io/p_2250b8f2w0.png"></div></center>
+<center><div class="animasiImg"><img src="https://i.top4top.io/p_2250b8f2w0.png"></div></center>
 <center><h1 style="font-size: 25px;">Melayani Otav Termurah Se-Indonesia! Bebas Pilih Negara</h1></center>
 <br>
 <center><h1 style="font-size: 20px;">Rp 20.000</h1></center>
@@ -219,7 +233,7 @@ padding: 10px;
 <h1 style="color: lightgray; padding: 20px; ">Public 26 february 2022</h1>
 <div class="katalog">
 <br>
-<center><div class="animasi"><img src="https://k.top4top.io/p_2250buvp62.png"></div></center>
+<center><div class="animasiImg"><img src="https://k.top4top.io/p_2250buvp62.png"></div></center>
 <center><h1 style="font-size: 25px;">Script Bot Whatsapp Edisi 2021! Gratis</h1></center>
 <br>
 <center><h1 style="font-size: 20px;">$0.00/free</h1></center>
@@ -249,7 +263,7 @@ padding: 10px;
 <h1 style="color: lightgray; padding: 20px; ">Public 27 february 2022</h1>
 <div class="katalog">
 <br>
-<center><div class="animasi"><img src="https://j.top4top.io/p_2250olymk1.png"></div></center>
+<center><div class="animasiImg"><img src="https://j.top4top.io/p_2250olymk1.png"></div></center>
 <center><h1 style="font-size: 25px;">Cara Menggandakan Nomor Whatsapp Gratis! Hanya Berlaku Di Beberapa Operator Saja</h1></center>
 <br>
 <center><h1 style="font-size: 20px;">$0.00/free</h1></center>
@@ -299,7 +313,7 @@ padding: 10px;
 <h1 style="color: lightgray; padding: 20px; ">Public 27 february 2022</h1>
 <div class="katalog">
 <br>
-<center><div class="animasi"><img src="https://g.top4top.io/p_2250qlr060.png"></div></center>
+<center><div class="animasiImg"><img src="https://g.top4top.io/p_2250qlr060.png"></div></center>
 <center><h1 style="font-size: 25px;">Jasa Sewa Whatsapp Bot Bulanan</h1></center>
 <br>
 <center><h1 style="font-size: 20px;">Rp 20.000</h1></center>
@@ -328,7 +342,7 @@ padding: 10px;
 <h1 style="color: lightgray; padding: 20px; ">Public 28 february 2022</h1>
 <div class="katalog">
 <br>
-<center><div class="animasi"><img src="https://b.top4top.io/p_225098v9v0.png"></div></center>
+<center><div class="animasiImg"><img src="https://b.top4top.io/p_225098v9v0.png"></div></center>
 <br>
 <a style="text-decoration:none" href="https://chat.whatsapp.com/LqagPMkcn7CJjeaU6Ce0iy"><div class="tombol_transparan"><br>GABUNG KE GROUP<br><br></div></a>
 <br>
@@ -357,7 +371,6 @@ padding: 10px;
 <br>
 </div>
 <br>
-</div>
 </div>
 
 </body>
