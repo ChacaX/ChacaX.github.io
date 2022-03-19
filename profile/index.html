@@ -35,20 +35,21 @@ border-radius: 5px;
 color: white;
 font-family: sans-serif;
 margin: auto;
+animation: container6 10s ease 1 normal
 }
 
 .container5 {
-background-color: black;
-width: 1000px;
-border-radius: 0px;
+width: 600px;
+border-radius: 10px;
 color: white;
 font-family: sans-serif;
 margin: auto;
+box-shadow: 0 0 5px red;
 }
 
 .box {
-width: 300px;
-border-radius: 20px;
+width: 800px;
+border-radius: 10px;
 color: white;
 font-family: sans-serif;
 margin: auto;
@@ -119,9 +120,72 @@ font-family: sans-serif;
 margin: auto;
 }
 
+.circle {
+height: 50px;
+width: 50px;
+margin: auto;
+transform-origin: 25% center; 
+animation: circular 1s linear reverse infinite; 
+}
+
+.circle:before {
+padding: 5px;
+position: absolute;
+content: ' ';
+height: 100%;
+width: 100%;
+border-radius: 50%;
+background-color: red;
+animation: circular 1s linear reverse infinite; 
+}
+
+.circle2 {
+height: 50px;
+width: 50px;
+margin: auto;
+transform-origin: 25% center; 
+animation: circular 1.5s linear reverse infinite; 
+}
+
+.circle2:before {
+padding: 5px;
+position: absolute;
+content: ' ';
+height: 100%;
+width: 100%;
+border-radius: 50%;
+background-color: yellow;
+animation: circular 1.5s linear reverse infinite; 
+}
+
+.circle3 {
+height: 50px;
+width: 50px;
+margin: auto;
+transform-origin: 25% center; 
+animation: circular 2s linear reverse infinite; 
+}
+
+.circle3:before {
+padding: 5px;
+position: absolute;
+content: ' ';
+height: 100%;
+width: 100%;
+border-radius: 50%;
+background-color: lightskyblue;
+animation: circular 2s linear reverse infinite; 
+}
+
+@keyframes circular {
+50% {
+transform: translate(0%, -20%);
+}
+}
+
 .box {
-width: 300px;
-border-radius: 20px;
+width: 800px;
+border-radius: 10px;
 color: white;
 font-family: sans-serif;
 margin: auto;
@@ -131,12 +195,12 @@ box-shadow: 0 0 5px red;
 }
 
 .container5 {
-background-color: black;
-width: 1000px;
-border-radius: 0px;
+width: 600px;
+border-radius: 10px;
 color: white;
 font-family: sans-serif;
 margin: auto;
+box-shadow: 0 0 5px red;
 }
 
 .container6 {
@@ -146,6 +210,7 @@ border-radius: 5px;
 color: white;
 font-family: sans-serif;
 margin: auto;
+animation: container6 10s ease 1 normal
 }
 
 .container7 {
@@ -413,6 +478,17 @@ background-color: yellow;
 }
 }
 
+@keyframes container6{
+0% {
+width: 0px;
+}
+80% {
+width: 0px;
+}
+100% {
+}
+}
+
 </style>
 </head>
 <body>
@@ -515,8 +591,8 @@ animation: transform 10s ease 1 normal; padding: 20px; border-radius: 1000px; wi
 <br>
 <br>
 <br>
+<center><h1 style="color: red; font-size: 20px;">________________________________________</h1></center>
 <center><h1 style="color: red; font-size: 20px;">____________________</h1></center>
-<center><h1 style="color: red; font-size: 20px;">__________</h1></center>
 	
 <div class="flex">
 <center><img style="
@@ -585,8 +661,8 @@ animation: transform 10s ease 1 normal; padding: 20px; border-radius: 1000px; wi
 <br>
 <br>
 <br>
+<center><h1 style="color: red; font-size: 20px;">________________________________________</h1></center>
 <center><h1 style="color: red; font-size: 20px;">____________________</h1></center>
-<center><h1 style="color: red; font-size: 20px;">__________</h1></center>
 	
 <div class="flex">
 <center><img style="
@@ -655,8 +731,8 @@ animation: transform 10s ease 1 normal; padding: 20px; border-radius: 1000px; wi
 <br>
 <br>
 <br>
+<center><h1 style="color: red; font-size: 20px;">________________________________________</h1></center>
 <center><h1 style="color: red; font-size: 20px;">____________________</h1></center>
-<center><h1 style="color: red; font-size: 20px;">__________</h1></center>
 
 <section class="section-sm" id="partner">
 <div class="flex">
@@ -722,6 +798,36 @@ animation: transform 10s ease 1 normal; padding: 20px; border-radius: 1000px; wi
 <br>
 <br>
 <br>
+<center><h1 style="color: red; font-size: 20px;">________________________________________</h1></center>
+<center><h1 style="color: red; font-size: 20px;">____________________</h1></center>
+
+<section class="section-sm" id="project">
+<div class="box">
+<br>
+<center><img style="width: 650px; height: 650px;" src="https://a.top4top.io/p_2269y46w80.png"></center>
+<br>
+<div class="flex">
+<div class="circle"><br></div>
+<div class="circle2"><br></div>
+<div class="circle3"><br></div>
+</div>
+<br>
+<center><h1 style="padding: 7px; color: white; font-family: cursive; font-size: 40px;">My Project</h1></center>
+<br>
+<a style="text-decoration: none" href="https://github.com/chacax">
+<div class="container5">
+<br>
+<center><h1 style="margin: auto; padding: 7px; color: white; font-family: cursive; font-size: 40px;">CLICK HERE TO VIEW</h1></center>
+<br>
+</div>
+</a>
+<br>
+</div>
+<br>
+<br>
+<br>
+<br>
+
 </div>
 </div>
 </div>
