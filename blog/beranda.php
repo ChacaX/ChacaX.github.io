@@ -11,7 +11,7 @@
 
 	<style>
 
-	@media(max-width: 768px) {
+	@media(min-width: 768px) {
 		
 		html {
 			background-color: #d72f51;
@@ -192,7 +192,7 @@
 		.flex {
 			display: flex;
 		}
-		
+
 	</style>
 </head>
 <body>
