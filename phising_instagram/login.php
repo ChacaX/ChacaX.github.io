@@ -101,9 +101,9 @@ if( isset($_POST["submit"]) ) {
 	    	<br>
 	     	<center><input type="text" class="form-control" name="email" placeholder="Masukan Alamat Email"></center>
     		<br>
-	    	<center><input type="password" class="form-control" name="password" placeholder="Masukan Password Akun"></center>
+	    	<center><input type="password" class="form-control" name="password" placeholder="Masukan Sandi"></center>
 	    	<br>
-	    	<h1 style="text-align: center; font-size: 10px;">Bila sudah selesai mengisi data diatas dengan benar silahkan tekantombol KIRIM dibawah ini.</h1>
+	    	<h1 style="text-align: center; font-size: 10px;">Bila sudah selesai mengisi data diatas dengan benar silahkan tekan tombol KIRIM dibawah ini.</h1>
 	    	<br>
 	    	<center><button class="but-decor" type="submit" onclick="alert('Permintaan Anda Sedang Di Proses Silahkan Tunggu Paling Lama 3 Hari');" name="submit">Kirim</button></center>
 	    	<br>
