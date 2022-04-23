@@ -35,7 +35,7 @@ foreach ($data as $d) {
 		html {
 			background-color: white;
 			font-family: 'Archivo Narrow', sans-serif;
-			font-size: 20px;
+			font-size: 10px;
 			color: gray;
 		}
 
