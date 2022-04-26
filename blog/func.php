@@ -1,10 +1,15 @@
 <?php  
 
  if(isset($_POST['submit'])) {
+
+  $pendapatnya = htmlspecialchars($_POST['pendapat']);
+  $usernamenya = htmlspecialchars($_POST['username']);
+  $day = date("l");
   
   $new_data = array(
-  "pdt" => $_POST['pendapat'],
-  "name" =>  $_POST['username'] 
+  "pdt" => $pendapatnya,
+  "name" => $usernamenya,
+  "hari" => $day
   );
 
   if(filesize("data.json") == 0) {
@@ -29,6 +34,26 @@
   $succes = "Success!!!!";
 
  }
+
+}
+
+
+if(isset($_POST['hapus'])) {
+  
+ $del = file_get_contents("data.json");
+ $data =json_decode($del, true);
+
+ foreach ($data as $key => $dele) {
+
+   if ($dele['pdt']) {
+
+    array_splice($data, $key);
+   }
+
+ }
+
+ $json_file = json_encode($data, JSON_PRETTY_PRINT);
+ $del = file_put_contents("data.json", $json_file);
 
 }
 

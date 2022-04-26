@@ -1,9 +1,42 @@
 <?php 
 
-require("func.php"); 
+require("func.php");
 
 $data = file_get_contents("data.json");
 $data = json_decode($data);
+
+if( isset($_POST["submit"]) ) {
+
+	echo "
+    	<script>
+    	     alert('Scroll Kebawah Untuk Melihat Pendapat Dari Orang Lain Juga')
+    	</script>
+    	";
+}
+
+if( isset($_POST["konfirm"]) ) {
+
+    if( $_POST["nick"] == "mitsuha" && $_POST["kode"] == "2468" ) {
+
+    	echo "
+    	<script>
+    	     alert('Selamat Data Yang Kamu Masukan Benar!')
+    	</script>
+    	";
+
+        header("Location: administrator.php");
+        exit;
+
+    } else {
+
+    	echo "
+    	<script>
+    	     alert('Data Yang Kamu Masukan Salah!')
+    	</script>
+    	";
+
+    } 
+}
 
 ?>
 
@@ -227,6 +260,7 @@ $data = json_decode($data);
 
 		td {
 			background-color: #efffff;
+			color: orange;
 		}
 
 		table {
@@ -260,6 +294,8 @@ $data = json_decode($data);
 			border-radius: 5px;
 		}
 
+
+
 	</style>
 </head>
 <body>
@@ -290,11 +326,11 @@ $data = json_decode($data);
 		<form action="" method="post">
 			<center><h1 style="font-style: oblique; padding: 5px; color: red; font-size: 15px;">yuk beri ulasan kepada saya agar kedepan menjadi pribadi yang lebih baik, form ini bersifat gratis kamu tak perlu khawatir untuk membayar</h1></center>
 			<br>
-			<center><input type="text" name="pendapat" placeholder="Masukan Pendapatmu Disini" class="form-control"></center>
+			<center><input type="text" name="pendapat" placeholder="Masukan Pendapatmu Disini" class="form-control" required></center>
 			<br>
-			<center><input type="text" name="username" placeholder="Masukan Nama Kamu" class="form-control"></center>
+			<center><input type="text" name="username" placeholder="Masukan Nama Kamu" class="form-control" required></center>
 			<br>
-			<center><button class="but-decor" type="submit" onclick="alert('Scroll Kebawah Untuk Melihat Pendapat Dari Orang Lain Juga');" name="submit">Kirim</button></center>
+			<center><button class="but-decor" type="submit" name="submit">Kirim</button></center>
 			<a href="#pendapatnya"><h1 style="position: relative; left: 5%; text-align: left; font-style: oblique; padding: 1px; font-size: 13px;">Tekan Untuk Scroll Kebawah</h1></a>
 		</form>
 		<br>
@@ -439,9 +475,23 @@ $data = json_decode($data);
         	</tr>
 	        <tr>
 	        	<td><?php foreach ($data as $d) {
-	echo "#".$d->name."<br>".$d->pdt."<br>"."_______________________________"."<br>"; } ?></td>
+	echo "# ".$d->name.", ".$d->hari."<br>"."message: ".$d->pdt."<br>"."______________________________________________________________"."<br>"."<br>"; } ?></td>
 	        </tr>
         </table></center>
+        <br>
+        <br>
+        <br>
+        <form action="" method="post">
+        	<center><h1 style="font-style: oblique; padding: 5px; color: red; font-size: 15px;">masuk sebagai admin</h1></center>
+			<br>
+			<center><input type="text" name="nick" placeholder="Masukan Nickmu Disini" class="form-control"></center>
+			<br>
+			<center><input type="password" name="kode" placeholder="Masukan Kode Kamu" class="form-control"></center>
+			<br>
+			<center><button class="but-decor" type="konfirm" name="konfirm">Konfirmasi</button></center>
+        </form>
+        <br>
+        <br>
     </div>
 
 </body>
