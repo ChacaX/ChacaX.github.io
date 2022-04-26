@@ -18,6 +18,7 @@ if( isset($_POST["konfirm"]) ) {
 
     if( $_POST["nick"] == "mitsuha" && $_POST["kode"] == "2468" ) {
 
+    	ob_start();
     	echo "
     	<script>
     	     alert('Selamat Data Yang Kamu Masukan Benar!')
