@@ -21,8 +21,16 @@ $data = json_decode($data);
 		@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@1&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@1&family=Poppins:wght@900&display=swap');
 
+		@media(max-width: 768px) {
+			
+	    }
+
 		body {
-			background: white;
+			background: url('IMG-20220401-WA0002.jpg')no-repeat center fixed;
+		    -webkit-background-size:cover;
+		    -moz-background-size:cover;
+		    -o-background-size:cover;
+		    background-size:cover;
 			padding: 0;
 			margin: 0;
 		    font-family: 'Archivo Narrow', sans-serif;
